@@ -1,0 +1,64 @@
+﻿@model QLCongViec.Models.TaskItem
+
+@{
+    ViewData["Title"] = "Chi tiết công việc";
+}
+
+<div class="container mt-4">
+    <h2>Chi tiết công việc</h2>
+
+    <div class="card shadow-sm mt-3">
+        <div class="card-body">
+            <dl class="row">
+                <dt class="col-sm-3">Tiêu đề</dt>
+                <dd class="col-sm-9">@Model.Title</dd>
+
+                <dt class="col-sm-3">Mô tả</dt>
+                <dd class="col-sm-9">@Model.Description</dd>
+
+                <dt class="col-sm-3">Hạn hoàn thành</dt>
+                <dd class="col-sm-9">
+                    @(Model.DueDate.HasValue ? Model.DueDate.Value.ToString("dd/MM/yyyy") : "Không có")
+                </dd>
+
+                <dt class="col-sm-3">Trạng thái</dt>
+                <dd class="col-sm-9">
+                    @if (Model.Status == 0)
+                    {
+                        <span class="badge bg-secondary">Chưa làm</span>
+                    }
+                    else if (Model.Status == 1)
+                    {
+                        <span class="badge bg-warning text-dark">Đang làm</span>
+                    }
+                    else
+                    {
+                        <span class="badge bg-success">Hoàn thành</span>
+                    }
+                </dd>
+
+                <dt class="col-sm-3">Mức độ ưu tiên</dt>
+                <dd class="col-sm-9">
+                    @if (Model.Priority == 0)
+                    {
+                        <span class="badge bg-light text-dark border">Thấp</span>
+                    }
+                    else if (Model.Priority == 1)
+                    {
+                        <span class="badge bg-info text-dark">Trung bình</span>
+                    }
+                    else
+                    {
+                        <span class="badge bg-danger">Cao</span>
+                    }
+                </dd>
+
+                <dt class="col-sm-3">Ngày tạo</dt>
+                <dd class="col-sm-9">@Model.CreatedAt.ToString("dd/MM/yyyy HH:mm")</dd>
+            </dl>
+
+            <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">Sửa</a>
+            <a asp-action="Index" class="btn btn-secondary">Quay lại</a>
+        </div>
+    </div>
+</div>

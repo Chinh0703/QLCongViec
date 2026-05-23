@@ -1,0 +1,179 @@
+﻿@model IEnumerable<QLCongViec.Models.TaskItem>
+
+@{
+    ViewData["Title"] = "Quản lý công việc";
+    int? currentStatus = ViewBag.Status;
+    int? currentPriority = ViewBag.Priority;
+}
+
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <div>
+            <h2>Quản lý công việc cá nhân</h2>
+            <p class="text-muted">Theo dõi, tìm kiếm và cập nhật công việc hằng ngày</p>
+        </div>
+
+        <a asp-action="Create" class="btn btn-primary">+ Thêm công việc</a>
+    </div>
+
+    <form asp-action="Index" method="get" class="card card-body mb-4 shadow-sm">
+        <div class="row g-2">
+            <div class="col-md-4">
+                <input type="text"
+                       name="searchString"
+                       value="@ViewBag.SearchString"
+                       class="form-control"
+                       placeholder="Tìm kiếm công việc..." />
+            </div>
+
+            <div class="col-md-3">
+                <select name="status" class="form-select">
+                    <option value="">-- Tất cả trạng thái --</option>
+
+                    @if (currentStatus == 0)
+                    {
+                        <option value="0" selected>Chưa làm</option>
+                    }
+                    else
+                    {
+                        <option value="0">Chưa làm</option>
+                    }
+
+                    @if (currentStatus == 1)
+                    {
+                        <option value="1" selected>Đang làm</option>
+                    }
+                    else
+                    {
+                        <option value="1">Đang làm</option>
+                    }
+
+                    @if (currentStatus == 2)
+                    {
+                        <option value="2" selected>Hoàn thành</option>
+                    }
+                    else
+                    {
+                        <option value="2">Hoàn thành</option>
+                    }
+                </select>
+            </div>
+
+            <div class="col-md-3">
+                <select name="priority" class="form-select">
+                    <option value="">-- Tất cả mức độ --</option>
+
+                    @if (currentPriority == 0)
+                    {
+                        <option value="0" selected>Thấp</option>
+                    }
+                    else
+                    {
+                        <option value="0">Thấp</option>
+                    }
+
+                    @if (currentPriority == 1)
+                    {
+                        <option value="1" selected>Trung bình</option>
+                    }
+                    else
+                    {
+                        <option value="1">Trung bình</option>
+                    }
+
+                    @if (currentPriority == 2)
+                    {
+                        <option value="2" selected>Cao</option>
+                    }
+                    else
+                    {
+                        <option value="2">Cao</option>
+                    }
+                </select>
+            </div>
+
+            <div class="col-md-2 d-grid">
+                <button type="submit" class="btn btn-success">Lọc</button>
+            </div>
+        </div>
+    </form>
+
+    <div class="card shadow-sm">
+        <div class="card-body">
+            @if (!Model.Any())
+            {
+                <div class="alert alert-info mb-0">
+                    Chưa có công việc nào.
+                </div>
+            }
+            else
+            {
+                <table class="table table-bordered table-hover align-middle">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Tiêu đề</th>
+                            <th>Mô tả</th>
+                            <th>Hạn hoàn thành</th>
+                            <th>Trạng thái</th>
+                            <th>Ưu tiên</th>
+                            <th>Ngày tạo</th>
+                            <th style="width: 220px;">Thao tác</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@item.Title</td>
+                                <td>@item.Description</td>
+
+                                <td>
+                                    @(item.DueDate.HasValue ? item.DueDate.Value.ToString("dd/MM/yyyy") : "Không có")
+                                </td>
+
+                                <td>
+                                    @if (item.Status == 0)
+                                    {
+                                        <span class="badge bg-secondary">Chưa làm</span>
+                                    }
+                                    else if (item.Status == 1)
+                                    {
+                                        <span class="badge bg-warning text-dark">Đang làm</span>
+                                    }
+                                    else
+                                    {
+                                        <span class="badge bg-success">Hoàn thành</span>
+                                    }
+                                </td>
+
+                                <td>
+                                    @if (item.Priority == 0)
+                                    {
+                                        <span class="badge bg-light text-dark border">Thấp</span>
+                                    }
+                                    else if (item.Priority == 1)
+                                    {
+                                        <span class="badge bg-info text-dark">Trung bình</span>
+                                    }
+                                    else
+                                    {
+                                        <span class="badge bg-danger">Cao</span>
+                                    }
+                                </td>
+
+                                <td>@item.CreatedAt.ToString("dd/MM/yyyy HH:mm")</td>
+
+                                <td>
+                                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-warning">Sửa</a>
+                                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-info">Chi tiết</a>
+                                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger">Xoá</a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            }
+        </div>
+    </div>
+</div>

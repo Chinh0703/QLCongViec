@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\Downloads\\thuchanh8\\QLCongViec\\QLCongViec\\QLCongViec.csproj": {}
+    "C:\\Users\\Admin\\Documents\\GitHub\\QLCongViec\\QLCongViec\\QLCongViec.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\Downloads\\thuchanh8\\QLCongViec\\QLCongViec\\QLCongViec.csproj": {
+    "C:\\Users\\Admin\\Documents\\GitHub\\QLCongViec\\QLCongViec\\QLCongViec.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Downloads\\thuchanh8\\QLCongViec\\QLCongViec\\QLCongViec.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Documents\\GitHub\\QLCongViec\\QLCongViec\\QLCongViec.csproj",
         "projectName": "QLCongViec",
-        "projectPath": "C:\\Users\\Admin\\Downloads\\thuchanh8\\QLCongViec\\QLCongViec\\QLCongViec.csproj",
+        "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\QLCongViec\\QLCongViec\\QLCongViec.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Downloads\\thuchanh8\\QLCongViec\\QLCongViec\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\Documents\\GitHub\\QLCongViec\\QLCongViec\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -49,6 +49,18 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.8, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

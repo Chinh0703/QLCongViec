@@ -1,0 +1,256 @@
+﻿@model QLCongViec.Models.StatisticsViewModel
+
+@{
+    ViewData["Title"] = "Thống kê";
+}
+
+<div class="container mt-4">
+    <div class="mb-4">
+        <h2>Thống kê công việc</h2>
+        <p class="text-muted">Tổng quan tình hình công việc cá nhân trong hệ thống</p>
+    </div>
+
+    <div class="row g-3 mb-4">
+        <div class="col-md-4">
+            <div class="card shadow-sm border-primary">
+                <div class="card-body">
+                    <h5 class="card-title text-primary">Tổng công việc</h5>
+                    <h2>@Model.TotalTasks</h2>
+                    <p class="text-muted mb-0">Tất cả công việc đã tạo</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow-sm border-secondary">
+                <div class="card-body">
+                    <h5 class="card-title text-secondary">Chưa làm</h5>
+                    <h2>@Model.NotStartedTasks</h2>
+                    <p class="text-muted mb-0">Công việc chưa bắt đầu</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow-sm border-warning">
+                <div class="card-body">
+                    <h5 class="card-title text-warning">Đang làm</h5>
+                    <h2>@Model.InProgressTasks</h2>
+                    <p class="text-muted mb-0">Công việc đang thực hiện</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow-sm border-success">
+                <div class="card-body">
+                    <h5 class="card-title text-success">Hoàn thành</h5>
+                    <h2>@Model.CompletedTasks</h2>
+                    <p class="text-muted mb-0">Công việc đã hoàn thành</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow-sm border-danger">
+                <div class="card-body">
+                    <h5 class="card-title text-danger">Ưu tiên cao</h5>
+                    <h2>@Model.HighPriorityTasks</h2>
+                    <p class="text-muted mb-0">Công việc cần xử lý sớm</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow-sm border-dark">
+                <div class="card-body">
+                    <h5 class="card-title text-dark">Quá hạn</h5>
+                    <h2>@Model.OverdueTasks</h2>
+                    <p class="text-muted mb-0">Công việc quá hạn nhưng chưa hoàn thành</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row g-3 mb-4">
+        <div class="col-md-6">
+            <div class="card shadow-sm h-100">
+                <div class="card-header bg-primary text-white">
+                    Biểu đồ trạng thái công việc
+                </div>
+
+                <div class="card-body text-center">
+                    @if (Model.TotalTasks == 0)
+                    {
+                        <div class="alert alert-info mb-0">
+                            Chưa có dữ liệu công việc để hiển thị biểu đồ.
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="chart-box">
+                            <canvas id="taskStatusChart"></canvas>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card shadow-sm h-100">
+                <div class="card-header bg-danger text-white">
+                    Biểu đồ mức độ ưu tiên
+                </div>
+
+                <div class="card-body text-center">
+                    @if (Model.TotalTasks == 0)
+                    {
+                        <div class="alert alert-info mb-0">
+                            Chưa có dữ liệu công việc để hiển thị biểu đồ.
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="chart-box">
+                            <canvas id="priorityChart"></canvas>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card shadow-sm">
+        <div class="card-header bg-dark text-white">
+            Ghi chú thống kê
+        </div>
+
+        <div class="card-body">
+            <p>
+                Trang thống kê giúp người dùng theo dõi tổng quan tình hình công việc cá nhân,
+                bao gồm trạng thái thực hiện, mức độ ưu tiên và các công việc đã quá hạn.
+            </p>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <h6>Thống kê theo trạng thái</h6>
+                    <ul>
+                        <li>Chưa làm: @Model.NotStartedTasks công việc</li>
+                        <li>Đang làm: @Model.InProgressTasks công việc</li>
+                        <li>Hoàn thành: @Model.CompletedTasks công việc</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-6">
+                    <h6>Thống kê theo mức độ ưu tiên</h6>
+                    <ul>
+                        <li>Ưu tiên thấp: @Model.LowPriorityTasks công việc</li>
+                        <li>Ưu tiên trung bình: @Model.MediumPriorityTasks công việc</li>
+                        <li>Ưu tiên cao: @Model.HighPriorityTasks công việc</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-3">
+                <a asp-controller="TaskItems" asp-action="Index" class="btn btn-primary">
+                    Xem danh sách công việc
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .chart-box {
+        width: 260px;
+        height: 260px;
+        margin: 0 auto;
+    }
+
+        .chart-box canvas {
+            max-width: 260px;
+            max-height: 260px;
+        }
+</style>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+        const statusCtx = document.getElementById('taskStatusChart');
+
+        if (statusCtx) {
+            new Chart(statusCtx, {
+                type: 'pie',
+                data: {
+                    labels: ['Chưa làm', 'Đang làm', 'Hoàn thành'],
+                    datasets: [{
+                        label: 'Số lượng công việc',
+                        data: [
+        @Model.NotStartedTasks,
+        @Model.InProgressTasks,
+        @Model.CompletedTasks
+                        ],
+                        backgroundColor: [
+                            '#6c757d',
+                            '#ffc107',
+                            '#198754'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'bottom'
+                        },
+                        title: {
+                            display: true,
+                            text: 'Theo trạng thái'
+                        }
+                    }
+                }
+            });
+        }
+
+        const priorityCtx = document.getElementById('priorityChart');
+
+        if (priorityCtx) {
+            new Chart(priorityCtx, {
+                type: 'pie',
+                data: {
+                    labels: ['Thấp', 'Trung bình', 'Cao'],
+                    datasets: [{
+                        label: 'Số lượng công việc',
+                        data: [
+        @Model.LowPriorityTasks,
+        @Model.MediumPriorityTasks,
+        @Model.HighPriorityTasks
+                        ],
+                        backgroundColor: [
+                            '#adb5bd',
+                            '#0dcaf0',
+                            '#dc3545'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'bottom'
+                        },
+                        title: {
+                            display: true,
+                            text: 'Theo mức độ ưu tiên'
+                        }
+                    }
+                }
+            });
+        }
+    </script>
+}

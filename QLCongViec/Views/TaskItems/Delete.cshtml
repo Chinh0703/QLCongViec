@@ -1,0 +1,38 @@
+﻿@model QLCongViec.Models.TaskItem
+
+@{
+    ViewData["Title"] = "Xoá công việc";
+}
+
+<div class="container mt-4">
+    <h2>Xoá công việc</h2>
+
+    <div class="alert alert-danger mt-3">
+        Bạn có chắc chắn muốn xoá công việc này không?
+    </div>
+
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <p><strong>Tiêu đề:</strong> @Model.Title</p>
+            <p><strong>Mô tả:</strong> @Model.Description</p>
+            <p><strong>Ngày tạo:</strong> @Model.CreatedAt.ToString("dd/MM/yyyy HH:mm")</p>
+
+            <form asp-action="Delete" id="deleteForm">
+                <input type="hidden" asp-for="Id" />
+
+                <button type="submit" class="btn btn-danger">Xác nhận xoá</button>
+                <a asp-action="Index" class="btn btn-secondary">Huỷ</a>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $("#deleteForm").on("submit", function () {
+                return confirm("Bạn có chắc chắn muốn xoá công việc này không?");
+            });
+        });
+    </script>
+}
