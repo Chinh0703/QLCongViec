@@ -19,6 +19,8 @@ namespace QLCongViec.Models
         [Required]
         public string PasswordHash { get; set; } = string.Empty;
 
+        public bool IsEmailConfirmed { get; set; } = false;
+
         public DateTime CreatedAt { get; set; } = DateTime.Now;
 
         public ICollection<TaskItem> TaskItems { get; set; } = new List<TaskItem>();

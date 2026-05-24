@@ -1,0 +1,50 @@
+﻿@model QLCongViec.Models.VerificationCodeViewModel
+
+@{
+    ViewData["Title"] = "Xác thực đăng ký";
+}
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-5">
+            <div class="card shadow-sm">
+                <div class="card-header bg-primary text-white">
+                    <h4 class="mb-0">Xác thực đăng ký</h4>
+                </div>
+
+                <div class="card-body">
+                    <p>
+                        Mã xác thực đã được gửi đến email:
+                        <strong>@ViewBag.Email</strong>
+                    </p>
+
+                    <form asp-action="VerifyRegisterEmail" method="post">
+                        <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                        <div class="mb-3">
+                            <label asp-for="Code" class="form-label"></label>
+                            <input asp-for="Code" class="form-control" placeholder="Nhập mã 6 số" />
+                            <span asp-validation-for="Code" class="text-danger"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary w-100">
+                            Xác thực và tạo tài khoản
+                        </button>
+                    </form>
+
+                    <div class="mt-3 text-center">
+                        <a asp-controller="Account" asp-action="Register">
+                            Quay lại đăng ký
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

@@ -35,4 +35,12 @@ namespace QLCongViec.Models
         [Display(Name = "Mật khẩu")]
         public string Password { get; set; } = string.Empty;
     }
+
+    public class VerificationCodeViewModel
+    {
+        [Required(ErrorMessage = "Vui lòng nhập mã xác thực")]
+        [StringLength(6, MinimumLength = 6, ErrorMessage = "Mã xác thực gồm 6 số")]
+        [Display(Name = "Mã xác thực")]
+        public string Code { get; set; } = string.Empty;
+    }
 }

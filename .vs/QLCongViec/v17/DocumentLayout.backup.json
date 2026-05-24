@@ -3,6 +3,46 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\Documents\\GitHub\\QLCongViec\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CA542450-2B38-4171-AD84-B3D1C6EEA634}|QLCongViec\\QLCongViec.csproj|c:\\users\\admin\\documents\\github\\qlcongviec\\qlcongviec\\views\\account\\verifyloginemail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CA542450-2B38-4171-AD84-B3D1C6EEA634}|QLCongViec\\QLCongViec.csproj|solutionrelative:qlcongviec\\views\\account\\verifyloginemail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA542450-2B38-4171-AD84-B3D1C6EEA634}|QLCongViec\\QLCongViec.csproj|c:\\users\\admin\\documents\\github\\qlcongviec\\qlcongviec\\views\\account\\verifyregisteremail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CA542450-2B38-4171-AD84-B3D1C6EEA634}|QLCongViec\\QLCongViec.csproj|solutionrelative:qlcongviec\\views\\account\\verifyregisteremail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA542450-2B38-4171-AD84-B3D1C6EEA634}|QLCongViec\\QLCongViec.csproj|c:\\users\\admin\\documents\\github\\qlcongviec\\qlcongviec\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA542450-2B38-4171-AD84-B3D1C6EEA634}|QLCongViec\\QLCongViec.csproj|solutionrelative:qlcongviec\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA542450-2B38-4171-AD84-B3D1C6EEA634}|QLCongViec\\QLCongViec.csproj|c:\\users\\admin\\documents\\github\\qlcongviec\\qlcongviec\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA542450-2B38-4171-AD84-B3D1C6EEA634}|QLCongViec\\QLCongViec.csproj|solutionrelative:qlcongviec\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA542450-2B38-4171-AD84-B3D1C6EEA634}|QLCongViec\\QLCongViec.csproj|c:\\users\\admin\\documents\\github\\qlcongviec\\qlcongviec\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA542450-2B38-4171-AD84-B3D1C6EEA634}|QLCongViec\\QLCongViec.csproj|solutionrelative:qlcongviec\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA542450-2B38-4171-AD84-B3D1C6EEA634}|QLCongViec\\QLCongViec.csproj|c:\\users\\admin\\documents\\github\\qlcongviec\\qlcongviec\\services\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA542450-2B38-4171-AD84-B3D1C6EEA634}|QLCongViec\\QLCongViec.csproj|solutionrelative:qlcongviec\\services\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA542450-2B38-4171-AD84-B3D1C6EEA634}|QLCongViec\\QLCongViec.csproj|c:\\users\\admin\\documents\\github\\qlcongviec\\qlcongviec\\models\\accountviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA542450-2B38-4171-AD84-B3D1C6EEA634}|QLCongViec\\QLCongViec.csproj|solutionrelative:qlcongviec\\models\\accountviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA542450-2B38-4171-AD84-B3D1C6EEA634}|QLCongViec\\QLCongViec.csproj|c:\\users\\admin\\documents\\github\\qlcongviec\\qlcongviec\\models\\useraccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA542450-2B38-4171-AD84-B3D1C6EEA634}|QLCongViec\\QLCongViec.csproj|solutionrelative:qlcongviec\\models\\useraccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA542450-2B38-4171-AD84-B3D1C6EEA634}|QLCongViec\\QLCongViec.csproj|c:\\users\\admin\\documents\\github\\qlcongviec\\qlcongviec\\models\\emailsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA542450-2B38-4171-AD84-B3D1C6EEA634}|QLCongViec\\QLCongViec.csproj|solutionrelative:qlcongviec\\models\\emailsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA542450-2B38-4171-AD84-B3D1C6EEA634}|QLCongViec\\QLCongViec.csproj|c:\\users\\admin\\documents\\github\\qlcongviec\\qlcongviec\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CA542450-2B38-4171-AD84-B3D1C6EEA634}|QLCongViec\\QLCongViec.csproj|solutionrelative:qlcongviec\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CA542450-2B38-4171-AD84-B3D1C6EEA634}|QLCongViec\\QLCongViec.csproj|c:\\users\\admin\\documents\\github\\qlcongviec\\qlcongviec\\views\\statistics\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{CA542450-2B38-4171-AD84-B3D1C6EEA634}|QLCongViec\\QLCongViec.csproj|solutionrelative:qlcongviec\\views\\statistics\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -13,10 +53,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{CA542450-2B38-4171-AD84-B3D1C6EEA634}|QLCongViec\\QLCongViec.csproj|c:\\users\\admin\\documents\\github\\qlcongviec\\qlcongviec\\models\\statisticsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CA542450-2B38-4171-AD84-B3D1C6EEA634}|QLCongViec\\QLCongViec.csproj|solutionrelative:qlcongviec\\models\\statisticsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CA542450-2B38-4171-AD84-B3D1C6EEA634}|QLCongViec\\QLCongViec.csproj|c:\\users\\admin\\documents\\github\\qlcongviec\\qlcongviec\\models\\useraccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CA542450-2B38-4171-AD84-B3D1C6EEA634}|QLCongViec\\QLCongViec.csproj|solutionrelative:qlcongviec\\models\\useraccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CA542450-2B38-4171-AD84-B3D1C6EEA634}|QLCongViec\\QLCongViec.csproj|c:\\users\\admin\\documents\\github\\qlcongviec\\qlcongviec\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,7 +78,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 16,
+          "SelectedChildIndex": 14,
           "Children": [
             {
               "$type": "Bookmark",
@@ -102,7 +138,124 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VerifyLoginEmail.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\QLCongViec\\QLCongViec\\Views\\Account\\VerifyLoginEmail.cshtml",
+              "RelativeDocumentMoniker": "QLCongViec\\Views\\Account\\VerifyLoginEmail.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\QLCongViec\\QLCongViec\\Views\\Account\\VerifyLoginEmail.cshtml*",
+              "RelativeToolTip": "QLCongViec\\Views\\Account\\VerifyLoginEmail.cshtml*",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAAADAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-24T13:57:41.381Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "VerifyRegisterEmail.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\QLCongViec\\QLCongViec\\Views\\Account\\VerifyRegisterEmail.cshtml",
+              "RelativeDocumentMoniker": "QLCongViec\\Views\\Account\\VerifyRegisterEmail.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\QLCongViec\\QLCongViec\\Views\\Account\\VerifyRegisterEmail.cshtml*",
+              "RelativeToolTip": "QLCongViec\\Views\\Account\\VerifyRegisterEmail.cshtml*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-24T13:57:06.203Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\QLCongViec\\QLCongViec\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "QLCongViec\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\QLCongViec\\QLCongViec\\Controllers\\AccountController.cs*",
+              "RelativeToolTip": "QLCongViec\\Controllers\\AccountController.cs*",
+              "ViewState": "AgIAAA8BAAAAAAAAAAAUwDIBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-24T13:56:10.842Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\QLCongViec\\QLCongViec\\Program.cs",
+              "RelativeDocumentMoniker": "QLCongViec\\Program.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\QLCongViec\\QLCongViec\\Program.cs*",
+              "RelativeToolTip": "QLCongViec\\Program.cs*",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAiwCgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-24T13:55:47.629Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EmailService.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\QLCongViec\\QLCongViec\\Services\\EmailService.cs",
+              "RelativeDocumentMoniker": "QLCongViec\\Services\\EmailService.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\QLCongViec\\QLCongViec\\Services\\EmailService.cs*",
+              "RelativeToolTip": "QLCongViec\\Services\\EmailService.cs*",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAiwDEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-24T13:55:15.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IEmailService.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\QLCongViec\\QLCongViec\\Services\\IEmailService.cs",
+              "RelativeDocumentMoniker": "QLCongViec\\Services\\IEmailService.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\QLCongViec\\QLCongViec\\Services\\IEmailService.cs*",
+              "RelativeToolTip": "QLCongViec\\Services\\IEmailService.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-24T13:54:44.211Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AccountViewModels.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\QLCongViec\\QLCongViec\\Models\\AccountViewModels.cs",
+              "RelativeDocumentMoniker": "QLCongViec\\Models\\AccountViewModels.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\QLCongViec\\QLCongViec\\Models\\AccountViewModels.cs*",
+              "RelativeToolTip": "QLCongViec\\Models\\AccountViewModels.cs*",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAowC0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-24T13:53:25.221Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "EmailSettings.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\QLCongViec\\QLCongViec\\Models\\EmailSettings.cs",
+              "RelativeDocumentMoniker": "QLCongViec\\Models\\EmailSettings.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\QLCongViec\\QLCongViec\\Models\\EmailSettings.cs*",
+              "RelativeToolTip": "QLCongViec\\Models\\EmailSettings.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-24T13:50:03.131Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\QLCongViec\\QLCongViec\\appsettings.json",
+              "RelativeDocumentMoniker": "QLCongViec\\appsettings.json",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\QLCongViec\\QLCongViec\\appsettings.json*",
+              "RelativeToolTip": "QLCongViec\\appsettings.json*",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-05-24T13:48:28.974Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "StatisticsController.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\QLCongViec\\QLCongViec\\Controllers\\StatisticsController.cs",
               "RelativeDocumentMoniker": "QLCongViec\\Controllers\\StatisticsController.cs",
@@ -110,12 +263,11 @@
               "RelativeToolTip": "QLCongViec\\Controllers\\StatisticsController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-23T14:41:04.438Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-23T14:41:04.438Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 12,
               "Title": "StatisticsViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\QLCongViec\\QLCongViec\\Models\\StatisticsViewModel.cs",
               "RelativeDocumentMoniker": "QLCongViec\\Models\\StatisticsViewModel.cs",
@@ -123,38 +275,37 @@
               "RelativeToolTip": "QLCongViec\\Models\\StatisticsViewModel.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAQwBQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-23T14:40:39.627Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-23T14:40:39.627Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 10,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\QLCongViec\\QLCongViec\\Views\\Statistics\\Index.cshtml",
               "RelativeDocumentMoniker": "QLCongViec\\Views\\Statistics\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\QLCongViec\\QLCongViec\\Views\\Statistics\\Index.cshtml*",
-              "RelativeToolTip": "QLCongViec\\Views\\Statistics\\Index.cshtml*",
-              "ViewState": "AgIAALUAAAAAAAAAAAAiwP8AAAABAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\QLCongViec\\QLCongViec\\Views\\Statistics\\Index.cshtml",
+              "RelativeToolTip": "QLCongViec\\Views\\Statistics\\Index.cshtml",
+              "ViewState": "AgIAAM0AAAAAAAAAAAAiwP8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-05-23T14:37:47.953Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "UserAccount.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\QLCongViec\\QLCongViec\\Models\\UserAccount.cs",
               "RelativeDocumentMoniker": "QLCongViec\\Models\\UserAccount.cs",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\QLCongViec\\QLCongViec\\Models\\UserAccount.cs",
-              "RelativeToolTip": "QLCongViec\\Models\\UserAccount.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAA/wBkAAAABAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\QLCongViec\\QLCongViec\\Models\\UserAccount.cs*",
+              "RelativeToolTip": "QLCongViec\\Models\\UserAccount.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-23T14:34:17.654Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 13,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\QLCongViec\\QLCongViec\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "QLCongViec\\Data\\ApplicationDbContext.cs",
@@ -162,12 +313,11 @@
               "RelativeToolTip": "QLCongViec\\Data\\ApplicationDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-23T14:33:58.128Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-23T14:33:58.128Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 15,
               "Title": "TaskItemsController.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\QLCongViec\\QLCongViec\\Controllers\\TaskItemsController.cs",
               "RelativeDocumentMoniker": "QLCongViec\\Controllers\\TaskItemsController.cs",
@@ -175,12 +325,11 @@
               "RelativeToolTip": "QLCongViec\\Controllers\\TaskItemsController.cs",
               "ViewState": "AgIAABcAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-23T14:28:37.928Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-23T14:28:37.928Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 14,
               "Title": "TaskItem.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\QLCongViec\\QLCongViec\\Models\\TaskItem.cs",
               "RelativeDocumentMoniker": "QLCongViec\\Models\\TaskItem.cs",
@@ -188,12 +337,11 @@
               "RelativeToolTip": "QLCongViec\\Models\\TaskItem.cs",
               "ViewState": "AgIAABkAAAAAAAAAAAAAwCQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-23T14:28:08.429Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-23T14:28:08.429Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 16,
               "Title": "Register.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\QLCongViec\\QLCongViec\\Views\\Account\\Register.cshtml",
               "RelativeDocumentMoniker": "QLCongViec\\Views\\Account\\Register.cshtml",
@@ -201,8 +349,7 @@
               "RelativeToolTip": "QLCongViec\\Views\\Account\\Register.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-23T14:26:13.04Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-23T14:26:13.04Z"
             }
           ]
         }
