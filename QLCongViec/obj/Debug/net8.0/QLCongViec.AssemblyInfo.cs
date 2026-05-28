@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("QLCongViec")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3714281696cfd1524a144d97278898f0a0e80af2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+969e205e34012566f51036bf633963985654f64c")]
 [assembly: System.Reflection.AssemblyProductAttribute("QLCongViec")]
 [assembly: System.Reflection.AssemblyTitleAttribute("QLCongViec")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -33,5 +33,8 @@ namespace QLCongViec.Models
 
         [ForeignKey("UserId")]
         public UserAccount? UserAccount { get; set; }
+
+        [Display(Name = "Đã gửi nhắc hạn")]
+        public bool IsReminderSent { get; set; } = false;
     }
 }

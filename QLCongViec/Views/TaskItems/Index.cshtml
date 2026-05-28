@@ -129,7 +129,27 @@
                                 <td>@item.Description</td>
 
                                 <td>
-                                    @(item.DueDate.HasValue ? item.DueDate.Value.ToString("dd/MM/yyyy") : "Không có")
+                                    @if (item.DueDate.HasValue)
+                                    {
+                                        <span>@item.DueDate.Value.ToString("dd/MM/yyyy")</span>
+
+                                        @if (item.Status != 2 && item.DueDate.Value.Date < DateTime.Today)
+                                        {
+                                            <span class="badge bg-danger ms-1">Quá hạn</span>
+                                        }
+                                        else if (item.Status != 2 && item.DueDate.Value.Date == DateTime.Today)
+                                        {
+                                            <span class="badge bg-danger ms-1">Đến hạn hôm nay</span>
+                                        }
+                                        else if (item.Status != 2 && item.DueDate.Value.Date == DateTime.Today.AddDays(1))
+                                        {
+                                            <span class="badge bg-warning text-dark ms-1">Sắp đến hạn</span>
+                                        }
+                                    }
+                                    else
+                                    {
+                                        <span>Không có</span>
+                                    }
                                 </td>
 
                                 <td>

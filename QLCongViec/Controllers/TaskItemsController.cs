@@ -2,16 +2,21 @@
 using Microsoft.EntityFrameworkCore;
 using QLCongViec.Data;
 using QLCongViec.Models;
+using QLCongViec.Services;
 
 namespace QLCongViec.Controllers
 {
     public class TaskItemsController : Controller
     {
         private readonly ApplicationDbContext _context;
+        private readonly ITaskReminderService _taskReminderService;
 
-        public TaskItemsController(ApplicationDbContext context)
+        public TaskItemsController(
+            ApplicationDbContext context,
+            ITaskReminderService taskReminderService)
         {
             _context = context;
+            _taskReminderService = taskReminderService;
         }
 
         private int? GetCurrentUserId()
@@ -33,6 +38,16 @@ namespace QLCongViec.Controllers
                 return RedirectToAction("Login", "Account");
             }
 
+            var userEmail = HttpContext.Session.GetString("Email");
+            var fullName = HttpContext.Session.GetString("FullName");
+
+            if (!string.IsNullOrEmpty(userEmail) && !string.IsNullOrEmpty(fullName))
+            {
+                await _taskReminderService.SendDueSoonReminderAsync(
+                    userId.Value,
+                    userEmail,
+                    fullName);
+            }
             var tasks = _context.TaskItems
                 .Where(t => t.UserId == userId.Value)
                 .AsQueryable();
@@ -113,6 +128,7 @@ namespace QLCongViec.Controllers
             {
                 taskItem.CreatedAt = DateTime.Now;
                 taskItem.UserId = userId.Value;
+                taskItem.IsReminderSent = false;
 
                 _context.Add(taskItem);
                 await _context.SaveChangesAsync();
@@ -179,6 +195,15 @@ namespace QLCongViec.Controllers
                 {
                     taskItem.UserId = userId.Value;
                     taskItem.CreatedAt = oldTask.CreatedAt;
+
+                    if (taskItem.Status == 2)
+                    {
+                        taskItem.IsReminderSent = true;
+                    }
+                    else
+                    {
+                        taskItem.IsReminderSent = false;
+                    }
 
                     _context.Update(taskItem);
                     await _context.SaveChangesAsync();

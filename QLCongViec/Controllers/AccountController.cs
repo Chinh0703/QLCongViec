@@ -12,11 +12,16 @@ namespace QLCongViec.Controllers
     {
         private readonly ApplicationDbContext _context;
         private readonly IEmailService _emailService;
+        private readonly ITaskReminderService _taskReminderService;
 
-        public AccountController(ApplicationDbContext context, IEmailService emailService)
+        public AccountController(
+            ApplicationDbContext context,
+            IEmailService emailService,
+            ITaskReminderService taskReminderService)
         {
             _context = context;
             _emailService = emailService;
+            _taskReminderService = taskReminderService;
         }
 
         public IActionResult Register()
@@ -252,6 +257,11 @@ namespace QLCongViec.Controllers
                 HttpContext.Session.SetString("Email", user.Email);
 
                 ClearLoginSession();
+
+                await _taskReminderService.SendDueSoonReminderAsync(
+                    user.Id,
+                    user.Email,
+                    user.FullName);
 
                 return RedirectToAction("Index", "TaskItems");
             }

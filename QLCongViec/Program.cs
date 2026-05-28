@@ -15,6 +15,8 @@ builder.Services.Configure<EmailSettings>(
 
 builder.Services.AddScoped<IEmailService, EmailService>();
 
+builder.Services.AddScoped<ITaskReminderService, TaskReminderService>();
+
 builder.Services.AddSession();
 
 var app = builder.Build();
